@@ -52,7 +52,7 @@ search.include_content = true # include rendered content of page/section in inde
 # search.truncate_content_length = 100 # Truncate at nth character. May be useful if index is getting too large.
 taxonomies = [
 #    {name = "categories", feed = true},
-    {name = "tags", feed = true},
+    # {name = "tags", feed = true},
 ]
 
 [extra]
@@ -64,9 +64,10 @@ taxonomies = [
 ###############################################################################
 
 menu = [
+    {url = "learning_rust", name = "Learning Rust", slash = true, blank = false, size="s110"},
     {url = "blog", name = "Blog", slash = true, blank = false, size="s110"},
 #    {url = "about", name = "About", slash = true, blank = false, size="s110"},
-    {url = "archive", name = "Archive", slash = true, blank = false, size="s110"},
+    # {url = "archive", name = "Archive", slash = true, blank = false, size="s110"},
 #    {url = "categories", name = "Categories", slash = true, blank = false, size="s110"},
 #    {url = "tags", name = "Tags", slash = true, blank = false, size="s110"},
 ]
