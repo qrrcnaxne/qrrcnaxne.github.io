@@ -58,7 +58,7 @@ impl TraitThing for StructThing2 {
     }
 }
 ```
-This is another implementation for our trait. This is done just to demonstrate later that we can use trait object to call show on any of the implementing structs.
+This is another implementation for our trait. This is done just to demonstrate later that we can use trait object to call `show()` on any of the implementing structs.
 ```rust
 #[derive(Debug)]
 enum EnumThing {
@@ -89,7 +89,7 @@ fn main() {
     trait_object.show();
 }
 ```
-The `tracing_subscriber::fmt::init();` line is there to capture all the logs we've been writing till now. There are 2 important blocks in this main function. We initialize the enum, and instantiate our trait object. This has the type `Box<dyn TraitThing>`. The `dyn TraitThing` part tells us that it's a dynamically defined object: any object that implements the `TraitThing` trait. Calling methods on trait object is achieved with dynamic dispatch, which is where the `dyn` keyword comes from. `Box<>` is a pointer to say that it's allocated on heap. Any object can implement this trait, so we don't really know the size of object when we make it. That's why it needs to be on heap. In the first block, we created a trait object and called show on it. In the next block, we're just modifying the same object and not creating a new one, yet the implementation changes to 2nd struct. This is the output.
+The `tracing_subscriber::fmt::init();` line is there to capture all the logs we've been writing till now. There are 2 important blocks in this main function. We initialize the enum, and instantiate our trait object. This has the type `Box<dyn TraitThing>`. The `dyn TraitThing` part tells us that it's a dynamically defined object: any object that implements the `TraitThing` trait. Calling methods on trait object is achieved with dynamic dispatch, which is where the `dyn` keyword comes from. `Box<>` is a pointer to say that it's allocated on heap. Any struct can implement this trait, so we don't really know the size of object at compile time. That's why it needs to be on heap. In the first block, we created a trait object and called show on it. In the next block, we're just modifying the same object and not creating a new one, yet the implementation changes to 2nd struct. This is the output.
 ```log
 2025-03-28T03:24:26.453717Z  INFO default: crate_thing: Called default() on StructThing1
 2025-03-28T03:24:26.453761Z  INFO show{self=StructThing1}: crate_thing: Called show() StructThing1
