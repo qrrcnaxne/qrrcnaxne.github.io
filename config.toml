@@ -41,19 +41,19 @@ external_links_no_referrer = false # rel="noreferrer"
 smart_punctuation = true           # `...` to `…`, `"quote"` to `“curly”` etc
 
 # Any Extra language you do not use, delete or comment out the extra language sections:
-[languages.fr]
-title = "Qrrcnaxne"
-description = "brr blogueee"
-generate_feeds = true
-build_search_index = true
-search.include_title = true # include title of page/section in index
-search.include_description = true # include description of page/section in index
-search.include_content = true # include rendered content of page/section in index
-# search.truncate_content_length = 100 # Truncate at nth character. May be useful if index is getting too large.
-taxonomies = [
-#    {name = "categories", feed = true},
-    # {name = "tags", feed = true},
-]
+# [languages.fr]
+# title = "Qrrcnaxne"
+# description = "brr blogueee"
+# generate_feeds = true
+# build_search_index = true
+# search.include_title = true # include title of page/section in index
+# search.include_description = true # include description of page/section in index
+# search.include_content = true # include rendered content of page/section in index
+# # search.truncate_content_length = 100 # Truncate at nth character. May be useful if index is getting too large.
+# taxonomies = [
+# #    {name = "categories", feed = true},
+#     # {name = "tags", feed = true},
+# ]
 
 [extra]
 ###############################################################################
@@ -64,10 +64,11 @@ taxonomies = [
 ###############################################################################
 
 menu = [
-    {url = "learning_rust", name = "Learning Rust", slash = true, blank = false, size="s110"},
+    {url = "rust", name = "Rust", slash = true, blank = false, size="s110"},
+#    {url = "kubernetes", name = "Kubernetes", slash = true, blank = false, size="s110"},
     {url = "blog", name = "Blog", slash = true, blank = false, size="s110"},
 #    {url = "about", name = "About", slash = true, blank = false, size="s110"},
-    # {url = "archive", name = "Archive", slash = true, blank = false, size="s110"},
+#    {url = "archive", name = "Archive", slash = true, blank = false, size="s110"},
 #    {url = "categories", name = "Categories", slash = true, blank = false, size="s110"},
 #    {url = "tags", name = "Tags", slash = true, blank = false, size="s110"},
 ]

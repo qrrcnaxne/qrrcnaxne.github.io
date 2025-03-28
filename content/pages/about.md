@@ -5,13 +5,9 @@ template = "pages.html"
 draft = false
 +++
 
-Brr qr qrr
 
-<!-- This site provides a demo for the [abridge theme](https://github.com/Jieiku/abridge) for [Zola](https://www.getzola.org/) the static site generator.
-
-Abridge was created by [Jake G (jieiku)](https://github.com/Jieiku) to be fast and lightweight, using semantic html, a class-light [abridge.css](https://github.com/Jieiku/abridge.css), and No Mandatory JS.
-
-Nearly half of the existing Zola MIT themes were inspiration for features and design of this theme.
-
-Abridge is licensed under the [MIT license](https://opensource.org/licenses/MIT)///. -->
- 
+Usually I rarely publish anything that I write. The purpose of this site is to try change that. \
+This blog is structured in 3 sections, and I might add more if it makes sense. 
+ * First is the front page, which is a blog about random non-professional things. I'm not exactly sure what I can write here. But it's bad look for the front page to be all formal and professional. 
+ * Second is the `/rust` section that you'll find on top right corner of the site. This is a blog about rust. A programming language that I'm into as a hobby. It's primarily a personal note taking blog. 
+ * Third is the `/blog` section that is catchall for everything that doesn't belong in the first 2 sections. Mostly a formal style professional and tech blog. 
