@@ -5,7 +5,7 @@ theme = 'PaperMod'
 
 [params]
   mainSections = ["home"]
-  ShowRssButtonInSectionTermList = true
+  ShowRssButtonInSectionTermList = false
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   defaultTheme = "auto"
