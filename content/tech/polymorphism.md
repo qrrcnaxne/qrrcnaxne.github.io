@@ -2,7 +2,8 @@
 title = "Polymorphism"
 description = "Traits"
 date = 2025-03-28
-updated = 2025-03-28
+lastmod = 2025-03-28
+tags = ["rust"]
 +++
 
 Traits is an incredible feature rust has. I want to avoid dissing on other languages no matter how much I enjoy it. So I'll keep it civil. Let's go on a different journey. Imagine you want to build some typical desktop software. It will go on the internet, it will dance with databases, it will do some heavy processing. All packaged together. 
@@ -11,13 +12,17 @@ But internet isn't reliable. Choice of a particular database isn't written in st
 Traits allows you to do that in rust. I've never used java, but it's supposed to be similar to interfaces from that world. Let's look at code examples. 
 
 ```rust
+use std::fmt::Debug;
+
 trait TraitThing: Debug {
     fn show(&self);
 }
 ```
-This is a simple trait that dictates that that function must exist in structs that implement this trait. These mandatory methods serve as definition for our API. In the end, we will initialize a trait object, and without caring what struct is being initialized in the background, call this show method without fear. The `Debug` you see is another trait. What this line means is that structs that implement our `TraitThing` trait must also implement the `Debug` trait. There are certain limitations on what sort of trait bounds we can add in our trait definitions. We can't add `Default` trait bound for example. Because the signature `default() -> Self` returns an object who's size isn't known at compile time. [More Information](https://doc.rust-lang.org/reference/items/traits.html). But that doesn't stop us from actually implementing the `Default` trait or using the `default()` method on our structs. But we can't call it on trait objects. We shouldn't need to call `default()` on trait objects, but it might be a limitation for other traits.
+This is a simple trait that dictates that that function must exist in structs that implement this trait. These mandatory methods serve as definition for our API. In the end, we will initialize a trait object, and without caring what struct is being initialized in the background, call this show method without fear. The `Debug` you see is another trait. What this line means is that structs that implement our `TraitThing` trait must also implement the `Debug` trait. There are certain limitations on what sort of trait bounds we can add in our trait definitions. We can't add `Default` trait bound for example. Because the signature `default() -> Self` returns an object whose size isn't known at compile time. [More Information](https://doc.rust-lang.org/reference/items/traits.html). But that doesn't stop us from actually implementing the `Default` trait or using the `default()` method on our structs. But we can't call it on trait objects. We shouldn't need to call `default()` on trait objects, but it might be a limitation for other traits.
 
 ```rust
+use tracing::{info, instrument};
+
 #[derive(Debug)]
 struct StructThing1;
 
@@ -36,7 +41,7 @@ impl TraitThing for StructThing1 {
     }
 }
 ```
-This is first implementation for our trait. The `#[derive(Debug)]` line automatically implements the `Debug` trait for our struct. The `#[instrument]` macro prints a log line whenever that function is called. `info!()` is also a logging thing that logs at info level. As we saw before, we couldn't add `Default` trait bound, but we implemented the trait anyway. 
+This is first implementation for our trait. The logging comes from the `tracing` crate, so you'll need `tracing` and `tracing-subscriber` in your `Cargo.toml`. The `#[derive(Debug)]` line automatically implements the `Debug` trait for our struct. The `#[instrument]` macro prints a log line whenever that function is called. `info!()` is also a logging thing that logs at info level. As we saw before, we couldn't add `Default` trait bound, but we implemented the trait anyway. 
 
 ```rust
 #[derive(Debug)]
@@ -96,5 +101,5 @@ The `tracing_subscriber::fmt::init();` line is there to capture all the logs we'
 2025-03-28T03:24:26.453774Z  INFO show{self=StructThing2}: crate_thing: Called show() StructThing2
 ```
 
-This behavior allows us for example to write a scrapper that scraps the same information from different websites. Or interact with different databases using the same API. Or use multiple libraries for processing our data. There is of course not infinite flexibility. If it's the same application there are certain assumptions that go with that, like the read / write operations you're doing on database and the data are similar, similar processing is being done by all the different libraries. It is only as flexible as you can make your trait methods. And this is a good thing. Infinite flexibility also means infinite complexity. 
+This behavior allows us for example to write a scraper that scrapes the same information from different websites. Or interact with different databases using the same API. Or use multiple libraries for processing our data. There is of course not infinite flexibility. If it's the same application there are certain assumptions that go with that, like the read / write operations you're doing on database and the data are similar, similar processing is being done by all the different libraries. It is only as flexible as you can make your trait methods. And this is a good thing. Infinite flexibility also means infinite complexity. 
 

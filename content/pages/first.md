@@ -2,7 +2,7 @@
 title = "The First"
 description = "First blog post"
 date = 2024-08-25
-updated = 2025-02-24
+lastmod = 2025-02-24
 +++
 
 # Purpose?

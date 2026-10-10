@@ -2,7 +2,8 @@
 title = "Hello Rust"
 description = "The rust problem"
 date = 2025-02-24
-updated = 2025-05-28
+lastmod = 2025-05-28
+tags = ["rust"]
 +++
 
 This is a post about my experience reasoning around and learning rust. I have been at it on and off for many months now. And I am dissatisfied with my progress. I was able to click with python in a day, and golang in about a month. Why is rust testing my patience like this? 
@@ -42,7 +43,7 @@ Would I be able to tell just by looking at it why it is the way it is? Nope. I h
  - `dyn Future` is needed for dynamic dispatch of the future, so we can have a future of unknown size at compile time. 
  - This future returns a `Response`, which is a type of unknown size. It comes from doing an API call, so no way of knowing how big it is. 
  - `Send` is a trait bound which makes the `Future` thread safe. Tokio shares data among threads by default. 
- - `_'` is a lifetime bound indicating that the `Future` can borrow data with same lifetime as `&self`. 
+ - `'_` is a lifetime bound indicating that the `Future` can borrow data with same lifetime as `&self`. 
 
 I went through many iterations to come up with this. It is perfect for now. But if I have a different problem with slightly different solution, I won't be able to just pull this out of my head. 
 I will need chatgpt to tell me again what the problem is, and what the solution is. At the very least, I will need to reference this code. 
