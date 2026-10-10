@@ -1,0 +1,30 @@
+{{- /* Front page: an index of every post, grouped by section. Order follows params.mainSections. */ -}}
+{{- define "main" }}
+{{- range site.Params.mainSections }}
+{{- with site.GetPage (printf "/%s" .) }}
+{{- $pages := .RegularPages.ByPublishDate.Reverse }}
+{{- if $pages }}
+<div class="archive-year">
+  <h2 class="archive-year-header">
+    <a class="archive-header-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <sup class="archive-count">&nbsp;{{ len $pages }}</sup>
+  </h2>
+  <div class="archive-posts">
+    {{- range $pages }}
+    <div class="archive-entry">
+      <h3 class="archive-entry-title">{{ .Title | markdownify }}</h3>
+      <div class="archive-meta">
+        {{- partial "post_meta.html" . -}}
+        {{- with .GetTerms "tags" }}&nbsp;·&nbsp;
+        {{- range $i, $t := . }}{{ if $i }}, {{ end }}<a href="{{ $t.RelPermalink }}" style="position: relative; z-index: 1">{{ $t.LinkTitle }}</a>{{ end }}
+        {{- end }}
+      </div>
+      <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+    </div>
+    {{- end }}
+  </div>
+</div>
+{{- end }}
+{{- end }}
+{{- end }}
+{{- end }}{{/* end main */}}

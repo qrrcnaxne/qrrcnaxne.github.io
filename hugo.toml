@@ -2,35 +2,36 @@ baseURL = 'https://qrrcnaxne.github.io/'
 locale = 'en-us'
 title = 'Qrrcnaxne'
 theme = 'PaperMod'
+pluralizeListTitles = false
 
 [params]
-  mainSections = ["home"]
-  ShowRssButtonInSectionTermList = false
+  mainSections = ["tech", "finance", "literature"]
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   defaultTheme = "auto"
 
+[outputs]
+  home = ["HTML"]
+  section = ["HTML"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+
 [[menu.main]]
-  name = "Blog"
-  url = "/blog/"
+  name = "Tech"
+  url = "/tech/"
+  weight = 1
+
+[[menu.main]]
+  name = "Finance"
+  url = "/finance/"
   weight = 2
+
+[[menu.main]]
+  name = "Literature"
+  url = "/literature/"
+  weight = 3
 
 [[menu.main]]
   name = "Pages"
   url = "/pages/"
-  weight = 3
-
-[[menu.main]]
-  name = "Posts"
-  url = "/posts/"
   weight = 4
-
-[[menu.main]]
-  name = "Rust"
-  url = "/rust/"
-  weight = 5
-
-[[menu.main]]
-  name = "Stonks"
-  url = "/stonks/"
-  weight = 6
