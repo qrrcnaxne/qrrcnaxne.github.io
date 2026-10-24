@@ -2,7 +2,7 @@
 title = "Object 1"
 date = 2016-12-07T13:08:24+05:30
 lastmod = 2020-09-02T22:49:41+05:30
-tags = ["prose", "dreams"]
+tags = ["prose", "dreams", "universe"]
 +++
 
 This article is fucked up and incomplete, I wanna complete it, but I can’t get myself to do it.

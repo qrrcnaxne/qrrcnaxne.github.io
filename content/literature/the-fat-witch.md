@@ -2,7 +2,7 @@
 title = "The fat witch"
 date = 2018-01-25T22:57:00+05:30
 lastmod = 2021-07-07T02:02:18+05:30
-tags = ["prose", "dreams"]
+tags = ["prose", "dreams", "universe"]
 +++
 
 Why was she. I spoke to her. She appeared like a delicate flower. But it was roasting and burning from inside. She had something. Something missing. Trying to find it out. Trying to prove something. She had practice. I could sense it. When she got what she worked for, she could finally feel good about herself. Because she lacked something. She needed it. What events of circumstances might have led her to this? I wondered. Fatal flaws; every hero has one in their own stories. I wanted to dig deeper. But I was scared. Do I want to approach? Is this curiosity really worth it? What do I wish to achieve? It was unbelievable. This whole thing. Felt like going deep inside Adam's family house.

@@ -2,7 +2,7 @@
 title = "I am a Ghoul"
 date = 2016-12-23T13:14:07+05:30
 lastmod = 2021-07-07T01:39:15+05:30
-tags = ["prose"]
+tags = ["prose", "universe"]
 +++
 
 There was a new funeral today. The atmosphere made him cringe. *"Why were people so pretentious?"* Old people taste so bad. He cooks them longer and they still don't taste as juicy as young people. Black clothes, black umbrella, tears. *"It's all staged. No one feels shit for the dead. Why won't young people die more often?"* New faces showed up every time. No exceptions. *"It was all staged."* *"No that wasn't possible."* He trusted the president. *"Where do so many people come from? Perhaps I'm getting old. My memory is getting fuzzy. I hope my work isn't affect because of this."* Alberto was very careful with the flesh he ate. No diseased people. He used to inspect the cause of death very carefully. People died by accident were the best. He could harvest the healthy parts.  Cooking got rid of most of the bacteria. Rotten meat had a distinct taste. Kind of bittery. He liked it more than fresh meat. Plus fresh meat was harder to obtain. Other members needed it. Sometimes he carved fresh meat too but he had to sacrifice it. He harvested the dead meat and bought it in the company to prepare. He used regular beef cooking guidelines – rare, medium rare, never had it blue. He had to cleanse it with chemicals that his friend used to prepare for him.

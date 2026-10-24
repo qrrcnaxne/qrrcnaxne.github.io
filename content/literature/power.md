@@ -2,7 +2,7 @@
 title = "Power"
 date = 2020-05-24T21:03:25+05:30
 lastmod = 2021-07-07T02:03:35+05:30
-tags = ["poetry"]
+tags = ["poetry", "universe"]
 +++
 
 What if you had a power?\

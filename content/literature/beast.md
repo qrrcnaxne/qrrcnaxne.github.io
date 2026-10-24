@@ -2,7 +2,7 @@
 title = "Beast"
 date = 2017-05-31T17:49:46+05:30
 lastmod = 2020-09-02T23:05:55+05:30
-tags = ["poetry"]
+tags = ["poetry", "universe"]
 +++
 
 In a cage I was\

@@ -2,7 +2,7 @@
 title = "Object 2"
 date = 2016-12-25T12:20:50+05:30
 lastmod = 2020-09-02T22:53:20+05:30
-tags = ["prose"]
+tags = ["prose", "universe"]
 +++
 
 I couldn’t go further. It was far inside. The light guarding it was too bright. I tried to travel around, tried to find other ways to get there. It didn’t work. If I pushed myself hard, I could move. But there was a strange feeling inside. There were things far greater and wiser than I realize. I wanted to get in no matter what. The progress I made was very impressive. But I couldn’t move forward any more than this. I should camp here. Try to get used to the brightness. Let the brightness get used to me. Soak in it, soak it in.

@@ -5,7 +5,7 @@ lastmod = 2021-07-07T02:06:31+05:30
 tags = ["prose"]
 +++
 
-There are things. Things like this. Things like that. Things like this and that. I like you. You are a good person. Please ask me out. Let's be together. Let's sync. Let's be something more than just two individual people. Do we want a baby? What do we eat? What do we speak? What do we hear? What do we see? Things are open, like a blank notebook. Full of potential. To write a story. A glorious story.
+There are things. Things like this. Things like that. Things like this and that. I like you. You are a good person. Please ask me out. Let's be together. Let's sync. Let's be something more than just two individual people. What do we eat? What do we speak? What do we hear? What do we see? Things are open, like a blank notebook. Full of potential. To write a story. A glorious story.
 
 There is a disconnect. But we can overcome. I can. You can. I am special. You are special. We can have each other. There's a little tango. I have a feeling of backing off. Things get real very fast. How to pull away? How to distance myself? I want you to come closer to me. You confessed. Things are going good. Things are going strong. Am I being too over whelming? Is my weight too much to pick? How should I become more light? How can I give you more space? How can I respect you more? How can I open you more? I love you. As a human being. You can think good. You can think clear. You understand me. Even if you don't understand. Even though everything.
 

@@ -2,7 +2,7 @@
 title = "Tale of a chicken"
 date = 2017-08-11T13:11:03+05:30
 lastmod = 2021-07-07T02:00:07+05:30
-tags = ["poetry"]
+tags = ["poetry", "universe"]
 +++
 
 What did the chick say to the duck?\
